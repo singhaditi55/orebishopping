@@ -53,7 +53,7 @@ const Home = () => {
       id: 7,
       title: "Fresh Bakery Bread",
       price: 6.99,
-      image: "https://images.unsplash.com/photo-1509440159596-0249088772ff",
+      image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc7c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       description: "Artisanal sourdough bread baked fresh daily"
     },
     {
@@ -163,38 +163,80 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      {/* Categories Section */}
-      <div className="container mx-auto px-4 py-12">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6">Shop by Category</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="relative rounded-lg overflow-hidden h-40 group">
-            <img src="https://images.unsplash.com/photo-1528750997573-3c83ec3d8b9c" alt="Bakery" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-              <span className="text-white text-xl font-bold">Bakery</span>
+        {/* Categories Section */}
+        <div className="container mx-auto px-4 py-12">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6">Shop by Category</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="relative rounded-lg overflow-hidden h-40 group">
+              <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                 alt="Pasta & Grains" 
+                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                <span className="text-white text-xl font-bold">Pasta & Grains</span>
+              </div>
+            </div>
+            <div className="relative rounded-lg overflow-hidden h-40 group">
+              <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d" 
+                 alt="Spices" 
+                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                <span className="text-white text-xl font-bold">Spices</span>
+              </div>
+            </div>
+            <div className="relative rounded-lg overflow-hidden h-40 group">
+              <img src="https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0" 
+                 alt="Beverages" 
+                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                <span className="text-white text-xl font-bold">Beverages</span>
+              </div>
+            </div>
+            <div className="relative rounded-lg overflow-hidden h-40 group">
+              <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862" 
+                 alt="Cheese" 
+                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                <span className="text-white text-xl font-bold">Cheese</span>
+              </div>
             </div>
           </div>
-          <div className="relative rounded-lg overflow-hidden h-40 group">
-            <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d" alt="Spices" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-              <span className="text-white text-xl font-bold">Spices</span>
+        
+          {/* Additional Categories Row */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+            <div className="relative rounded-lg overflow-hidden h-40 group">
+              <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                 alt="Olive Oils" 
+                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                <span className="text-white text-xl font-bold">Olive Oils</span>
+              </div>
             </div>
-          </div>
-          <div className="relative rounded-lg overflow-hidden h-40 group">
-            <img src="https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0" alt="Beverages" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-              <span className="text-white text-xl font-bold">Beverages</span>
+            <div className="relative rounded-lg overflow-hidden h-40 group">
+              <img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                 alt="Honey & Preserves" 
+                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                <span className="text-white text-xl font-bold">Honey & Preserves</span>
+              </div>
             </div>
-          </div>
-          <div className="relative rounded-lg overflow-hidden h-40 group">
-            <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862" alt="Cheese" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-              <span className="text-white text-xl font-bold">Cheese</span>
+            <div className="relative rounded-lg overflow-hidden h-40 group">
+              <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                 alt="Chocolates" 
+                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                <span className="text-white text-xl font-bold">Chocolates</span>
+              </div>
+            </div>
+            <div className="relative rounded-lg overflow-hidden h-40 group">
+              <img src="https://images.unsplash.com/photo-1536591168415-c368e7507110?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                 alt="Nuts & Dried Fruits" 
+                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                <span className="text-white text-xl font-bold">Nuts & Dried Fruits</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
       <main className="container mx-auto px-4 py-8">
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Featured Products</h2>
         
